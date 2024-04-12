@@ -18,16 +18,2071 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+body {
+  width: 100%;
+  background-color: #131f25;
+}
+
+#sidebarDoulingo {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  background-color: #131f25;
+  border-right: 2px solid #37464f;
+}
+
+.innerSideabrC {
+  width: 96%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AllMovementsC {
+  width: 96%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.LinksForSodebar {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AllMovementsC div {
+  width: 90%;
+  height: 45px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.AllMovementsC div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.AllMovementsC div:hover {
+  background-color: #202f37;
+}
+
+.AllMovementsC div strong {
+  text-transform: capitalize;
+}
+
+.logoC {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.logoC img {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+#journey {
+  width: 50%;
+  left: 22%;
+  position: absolute;
+  margin-top: 100px;
+  /* background-color: RED; */
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-iteration-count: calc(1);
+}
+
+.FatherHeader {
+  top: 0%;
+  width: 50%;
+  height: fit-content;
+  background-color: #131f25;
+  position: fixed;
+  z-index: 10;
+}
+
+.headingJourneyC {
+  width: 95%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #58cc02;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.contentForItCJourney {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationAndCloseBtnC {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.closeandsometext {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.closeandsometext button {
+  width: 25px;
+  height: 25px;
+  font-size: 1.2em;
+}
+
+.closeandsometext span {
+  padding-left: 10px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.finalcontent {
+  display: flex;
+  align-items: center;
+}
+
+.finalcontent h3 {
+  margin-top: 10px;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.guidebookC {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guidebookC div {
+  width: 85%;
+  height: 45px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  border: 2px solid green;
+  transition-duration: 0.3s;
+  justify-content: space-evenly;
+  cursor: pointer;
+  box-shadow: 1px 3px 0px 0px green;
+}
+
+.guidebookC div:hover {
+  box-shadow: none;
+}
+
+.startLessonOneCInFunction {
+  top: 0;
+  left: 0;
+  z-index: 40;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+}
+
+.innerStartLessonOneInFunction {
+  width: 300px;
+  height: 160px;
+  color: white;
+  position: relative;
+  right: 40px;
+  bottom: 26px;
+  border-radius: 18px;
+  z-index: 100;
+  background-color: #58cc02;
+  animation: animtionsating 0.50s calc(1);
+}
+
+.topTond {
+  justify-content: center;
+  display: flex;
+  width: 5%;
+  font-size: 2em;
+  margin: 0 auto;
+  color: #58cc02;
+  position: relative;
+  bottom: 10px;
+  transform: rotate(90deg);
+
+}
+
+
+
+
+@keyframes animtionsating {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 300px;
+    height: 150px;
   }
 }
+
+.contentForStartInbox {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  line-height: 30px;
+  flex-direction: column;
+  animation: animaope 3s calc(1);
+}
+
+#ChapterOFexerciseName {
+  font-size: 1.20em;
+}
+
+#HowMuchExercise {
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+#PgaeOpenLinkWheUserClickOnStartLesson {
+  width: 100%;
+  height: 45px;
+  color: #58cc02;
+  background-color: white;
+  border-radius: 16px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 2px 0 0 gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes animaope {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* This all chapter sections one */
+.journeyaddedC {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.innerJourneyAdded {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionOneChapterC {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+}
+
+.lessionOne {
+  width: 80px;
+  height: 75px;
+  display: flex;
+  font-size: 2em;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 100px;
+  justify-content: center;
+  transform: rotateX(25deg);
+  transition-duration: 0.4s;
+  background-color: #58cc02;
+  box-shadow: 0px 8px 0px 1px rgb(8, 147, 8);
+}
+
+.lessionTwo {
+  width: 80px;
+  height: 75px;
+  display: flex;
+  font-size: 2em;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 100px;
+  justify-content: center;
+  transform: rotateX(25deg);
+  transition-duration: 0.4s;
+  background-color: #37464f;
+  color: #52656d;
+  box-shadow: 0px 8px 0px 1px #2c383f;
+}
+
+.mr-4 {
+  margin-left: -25px;
+}
+
+.marginleft {
+  margin-left: -50px;
+}
+
+.giftsectionC {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerGift {
+  width: fit-content;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.marginleftThree {
+  padding-left: 20px;
+}
+
+.endsectionsChapterOne {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* margin-top: 40px; */
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.oneLine {
+  width: 20%;
+  height: 3px;
+  border: 1px solid #52656d;
+  background-color: #52656d;
+}
+
+.endsectionsChapterOne p {
+  width: 60%;
+  color: #52656d;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.secondline {
+  width: 20%;
+  height: 3px;
+  border: 1px solid #52656d;
+  background-color: #52656d;
+}
+
+.journeyPadding {
+  margin-top: -90px;
+}
+
+.lessonOneInOtherWay {
+  background-color: #ce83ff;
+  box-shadow: 0px 8px 0px 1px #a569cc;
+}
+
+.lessonTwoInOtherWay {
+  background-color: #35cd9c;
+  box-shadow: 0px 8px 0px 1px #29a47d;
+}
+
+.lessonThreeInOtherWay {
+  /* background-color: #35cd9c;
+  box-shadow: 0px 8px 0px 1px #29a47d; */
+}
+
+.lessonFuourInOtherWay {
+  background-color: #24b0f6;
+  box-shadow: 0px 8px 0px 1px #1b8dc5;
+}
+
+.animtionone {
+  animation: animtionone 4s infinite;
+}
+
+@keyframes animtionone {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* The end section one or chapter one */
+@media (max-width: 1060px) {
+  #sidebarDoulingo {
+    top: 90%;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    z-index: 9;
+    margin: 0 auto;
+  }
+
+  .innerSideabrC {
+    width: 100%;
+    flex-direction: row;
+    background-color: #131f25;
+  }
+
+  .AllMovementsC {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .AllMovementsC div {
+    width: 80px;
+
+    justify-content: center;
+  }
+
+  .AllMovementsC div strong {
+    display: none;
+  }
+
+  .logoC {
+    display: none;
+  }
+
+  #journey {
+    width: 100%;
+  }
+
+  .headingJourneyC {
+    top: 10%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #58cc02;
+    border-radius: 10px;
+    margin-top: 40px;
+    flex-direction: column;
+    /* margin-left: 20px;/ */
+  }
+
+  .contentForItCJourney {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: royalblue; */
+    justify-content: space-between;
+  }
+
+  .locationAndCloseBtnC {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .closeandsometext {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .closeandsometext button {
+    width: 50px;
+    height: 25px;
+    font-size: 1.2em;
+  }
+
+  .closeandsometext span {
+    padding-left: 10px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.699);
+  }
+
+  .finalcontent {
+    display: flex;
+    align-items: center;
+  }
+
+  .finalcontent h3 {
+    padding-left: 10px;
+  }
+
+  .guidebookC {
+    width: 50%;
+    padding-bottom: 20px;
+  }
+
+  .guidebookC button {
+    width: 85%;
+  }
+}
+
+#superC {
+  right: 0;
+  width: 28%;
+  height: 100%;
+  display: flex;
+  overflow: scroll;
+  position: fixed;
+  flex-direction: column;
+}
+
+.superInnerC {
+  width: 100%;
+  height: 100vh;
+}
+
+.headerSuperC {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerSuperC {
+  width: 98%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.innerSuperC div {
+  width: 80px;
+  height: 50px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.innerSuperC div:hover {
+  background-color: #202f37;
+}
+
+.myCoursesC {}
+
+.myCoursesC img {
+  width: 40px;
+  height: 40px;
+}
+
+.dayStreakC {
+  font-size: 15px;
+  color: #37464f;
+}
+
+.GemsC {
+  font-size: 15px;
+  color: #24b0f6;
+}
+
+.heartsC {
+  font-size: 15px;
+  color: #ee5555;
+}
+
+.superCBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.superBoxCSecond {
+  width: 95%;
+  height: 230px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #37464f;
+}
+
+.innerSuperBT {
+  width: 90%;
+  background-repeat: no-repeat;
+  background-size: calc(90px);
+  background-position: right;
+  background-image: url(./download-1.svg);
+}
+
+.headingLogoSuper {
+  width: 100%;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.headingLogoSuper img {
+  width: 80px;
+}
+
+.headingLogoSuper h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.headingLogoSuper p {
+  font-size: 16px;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.buttonSuperForIt {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonSuperForIt button {
+  width: 100%;
+  height: 45px;
+  border-radius: 15px;
+  background-color: #3c4dff;
+  box-shadow: 0 4px 0 0 #3f22ec;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.UnlockLeaderboardsC {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.innerUnlockLeaderboards {
+  width: 95%;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #37464f;
+}
+
+.innerUnlockLeaderboards h3 {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.inconsAndContent {
+  width: 100%;
+  display: flex;
+  margin-top: 28px;
+}
+
+.iconsImgeLeaderC {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentleaderBoardsC {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentleaderBoardsC p {
+  width: 96%;
+}
+
+.DailyQuestsHeading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerDailyQuests {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.innerDailyQuests strong {
+  margin-right: 50px;
+}
+
+.VEIWAll {
+  font-size: 16px;
+  color: #49c0f8;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inconsAndRangeAnimationc {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.goalsImagesC {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.goalsImagesC img {
+  width: 80px;
+}
+
+.goalsImagesTwoAndRrange {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.goalsImagesTwoAndRrange h3 {
+  width: 100%;
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+
+.goalsimageAndRangeCin {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rangeGoalsOne {
+  width: 80%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: #37464f;
+}
+
+.rangeGoalsTwo {
+  width: 20%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #f7c100;
+}
+
+.lastrangeGoal {
+  width: 80%;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #fed901;
+}
+
+.imageBox {
+  width: 20%;
+}
+
+.imageBox img {
+  width: 25;
+  position: relative;
+  left: 170px;
+}
+
+.addsC {
+  width: 95%;
+  height: 230px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #37464f;
+}
+
+.innerAddsC {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imgeForAddC {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 5px;
+  background-color: #9ec9a8;
+}
+
+.REMOVEADSVC {
+  font-size: 16px;
+  color: #49c0f8;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* This is profilevistinghere of styling css  from here now */
+
+
+#profilevistinghere {
+  left: 22%;
+  width: 45%;
+  padding-top: 30px;
+  position: absolute;
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-iteration-count: calc(1);
+}
+
+
+.ProfileCInUserPage {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #d7ffb8;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(./profileimage.png);
+}
+
+.imageUserForProfile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.imageUserForProfile a button {
+  bottom: 70px;
+  width: 55px;
+  right: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #d7ffb8;
+  box-shadow: 0 3px 0 0 #a2cb82;
+  border: 2px solid #a2cb82;
+  position: relative;
+}
+
+.EditorIcon {
+  font-size: 18px;
+  color: #131f25;
+}
+
+.userNameC {
+  width: 96%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 20px;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#userName {
+  font-size: 1.7em;
+}
+
+#userID {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #52656d;
+  padding-top: 8px;
+}
+
+#UserJionedDate {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 10px;
+  color: rgba(245, 245, 245, 0.664);
+}
+
+.userHovaFollowersAndFollowingC {
+  width: 98%;
+  height: 100px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #37464f;
+}
+
+.followAndFollowingC {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#TotalFollowing {
+  width: 100px;
+  color: #24b0f6;
+}
+
+#TotalFollowers {
+  width: 100px;
+  color: #24b0f6;
+}
+
+#FollowingNumber,
+#FollowersNumber {
+  padding-right: 5px;
+}
+
+.flagC {
+  width: 65%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.flagC img {
+  width: 50px;
+  height: 40px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.StatisticsC {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+
+}
+
+.StatisticsC h3 {
+  width: 100%;
+  font-size: 19px;
+  font-weight: 600;
+  padding-left: 13px;
+  padding-bottom: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fourGoalsC {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fourGoalsC div div img {
+  width: 35px;
+  height: 35px;
+}
+
+.DaystreakC {
+  width: 48.50%;
+  height: 80px;
+  display: flex;
+  margin-top: 15px;
+  border-radius: 20px;
+  align-items: center;
+  border: 2px solid #37464f;
+  justify-content: space-evenly;
+  color: #52656d;
+}
+
+.streakImage {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DayStreakContentAndComp {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.TotalXPC {
+  width: 48.50%;
+  height: 80px;
+  display: flex;
+  margin-top: 15px;
+  border-radius: 20px;
+  align-items: center;
+  border: 2px solid #37464f;
+  justify-content: space-evenly;
+  color: #52656d;
+}
+
+.CurrentleagueC {
+  width: 48.50%;
+  height: 80px;
+  display: flex;
+  margin-top: 15px;
+  border-radius: 20px;
+  align-items: center;
+  border: 2px solid #37464f;
+  justify-content: space-evenly;
+  color: #52656d;
+}
+
+.Top3finishesC {
+  width: 48.50%;
+  height: 80px;
+  display: flex;
+  margin-top: 15px;
+  border-radius: 20px;
+  align-items: center;
+  border: 2px solid #37464f;
+  justify-content: space-evenly;
+  color: #52656d;
+}
+
+.Achievements {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.headingAchievements {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headingAchievements strong {
+  font-size: 17px;
+  padding-left: 5px;
+}
+
+.ViewAllForAchievements {
+  color: #24b0f6;
+  padding-right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.achievemenstThreeC {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #37464f;
+}
+
+.Wildfire {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #37464f;
+}
+
+.wildfireImage {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./AchievementsImage/download-1.svg);
+}
+
+.wildfireImage span {
+  top: 83px;
+  left: 2.5px;
+  color: black;
+  font-size: 12px;
+  position: relative;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wildfireContentAndInfo {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.headingWildfire {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headingWildfire strong {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.headingWildfire span {
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.wildfireRangeAnimationfuelOne {
+  width: 95%;
+  height: 15px;
+  margin-left: 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #37464f;
+}
+
+.wildfireRangeAnimationfuelTwo {
+  width: 30%;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #58cc02;
+}
+
+.wildfireRangeAnimationfuelThree {
+  width: 90%;
+  height: 8px;
+  border-radius: 50px;
+  background-color: rgb(49, 232, 8);
+}
+
+.lastWildFireForSomeText {
+  width: 100%;
+}
+
+.lastWildFireForSomeText p {
+  margin-left: 10px;
+}
+
+.Sage {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #37464f;
+}
+
+.SageImage {
+  background-image: url(./AchievementsImage/download-3.svg);
+}
+
+.Scholar {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+}
+
+.ScholarImage {
+  background-image: url(./AchievementsImage/download-4.svg);
+}
+
+
+.rigntbarInProfile {
+  width: 40%;
+}
+
+
+#rightbarInProfile {
+  top: 0;
+  right: 0;
+  width: 33%;
+  position: fixed;
+  height: 100%;
+  overflow: scroll;
+  justify-content: center;
+  display: flex;
+
+}
+
+.innerProfileRightbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.FOLLOWINGAndFOLLOWERSC {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.INNERFOLLOWINGAndFOLLOWERSC {
+  width: 98%;
+  height: 370px;
+  display: flex;
+  border-radius: 16px;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #37464f;
+}
+
+.followingandFollowersInRightbarProfile {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  border-bottom: 2px solid #37464f;
+}
+
+.followingIsHere {
+  width: 50%;
+  height: 55px;
+  display: flex;
+  font-size: 17px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #37464f;
+
+}
+
+.followingIsHere:hover {
+  color: #24b0f6;
+  border-bottom: 2px solid #24b0f6;
+}
+
+.FollowersIsHere {
+  width: 50%;
+  height: 55px;
+  display: flex;
+  font-size: 17px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #37464f;
+
+}
+
+.FollowersIsHere:hover {
+  color: #24b0f6;
+  border-bottom: 2px solid #24b0f6;
+}
+
+.noFollowersOrFollowingThenShowThigsC {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.noFollowersOrFollowingThenShowThigsC img {
+  width: 90%;
+}
+
+.noFollowersOrFollowingThenShowThigsC p {
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.672);
+}
+
+
+.invitingBoxToFriendsC {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.innerinvitingBoxToFriends {
+  width: 98%;
+  height: 190px;
+  display: flex;
+  border-radius: 16px;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid #37464f;
+}
+
+.headingInviteFriends {
+  width: 100%;
+}
+
+.AddfriendsC {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.imageAndContent {
+  width: 70%;
+  align-items: center;
+  display: flex;
+
+}
+
+.imageAndContent img {
+  width: 50px;
+  height: 50px;
+  padding-right: 5px;
+}
+
+.imageAndContent strong {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.AddfriendsIn {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.InvitefriendsC {
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.IconsFontawesome {
+  font-size: 20px;
+}
+
+/* The end profilevistinghere of stylinf css from here now */
+
+.doulingoCh {
+  width: 200px;
+  position: relative;
+  left: 380px;
+  top: 55px;
+}
+
+/* This is leaderboard of styling css from here */
+#leaderboardPage {
+  width: 80%;
+  left: 20%;
+  display: flex;
+  position: absolute;
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-iteration-count: calc(1);
+}
+
+.leaderboardspageC {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerunlockleaderboard {
+  width: 95%;
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imageunlockleaderboard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageunlockleaderboard img {
+  width: 260px;
+}
+
+.unlockleaderboardForContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.unlockleaderboardForContent h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.unlockleaderboardForContent p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.STARTALESSON button {
+  width: 250px;
+  height: 45px;
+  margin-top: 30px;
+  border-radius: 15px;
+  color: #24b0f6;
+  border: 2px solid #37464f;
+  box-shadow: 0 2px 0 0 #37464f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightbarForLeaderboards {
+  right: 0;
+  width: 40%;
+  position: absolute;
+}
+
+.WHATARELEADERBOARDSC {
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.innnerWHATARELEADERBOARDS {
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  padding-right: 0;
+  display: flex;
+  border-radius: 15px;
+  border: 2px solid #37464f;
+}
+
+.contentForAreaLeaderboard {
+  width: 65%;
+}
+
+.contentForAreaLeaderboard h2 {
+  font-size: 13px;
+  color: #52656d;
+}
+
+.contentForAreaLeaderboard h1 {
+  font-size: 16px;
+  margin-top: 8px;
+  line-height: 28px;
+}
+
+.contentForAreaLeaderboard p {
+  margin-top: 8px;
+  line-height: 28px;
+  font-size: 15px;
+}
+
+.imageforarealeaderborad {
+  width: 35%;
+  display: flex;
+  justify-content: end;
+}
+
+.imageforarealeaderborad img {
+  width: 100px;
+  margin-top: 30px;
+}
+
+/* The end leaderboard of styling css from here */
+
+/* This is .Questspage of styling css from here */
+#Questspage {
+  width: 80%;
+  left: 20%;
+  display: flex;
+  position: absolute;
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-iteration-count: calc(1);
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+.midPgaeForQuests {
+  width: 60%;
+}
+
+.welcaombackC {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.innerWelcomebac {
+  width: 90%;
+  height: 240px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #ce82ff;
+}
+
+.welcomeC {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: black;
+  justify-content: space-between;
+}
+
+.contentForWelcome {
+  width: 60%;
+}
+
+.contentForWelcome h1 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.contentForWelcome p {
+  line-height: 35px;
+}
+
+.imageforWelcome {
+  width: 50%;
+}
+
+.imageforWelcome img {
+  position: relative;
+  top: 25px;
+  left: 15px;
+  border-radius: 20px;
+}
+
+.DailyQuestsInQuestsPage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerDailyQuestsInQuestsPage {
+  width: 90%;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.headingForDialyQuestsInQuestsPage {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headingForDialyQuestsInQuestsPage strong {
+  font-size: 1.30em;
+}
+
+.headingForDialyQuestsInQuestsPage button {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffab33;
+}
+
+.Earn10XPCINQUESTSPAGEMorequestsunlocksoon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.questsCINpageOfQuests {
+  width: 99%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #2c383f;
+  border-radius: 15px;
+}
+
+.imageforQuestsINpage {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentForitAndRnageAnimation {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contentForitAndRnageAnimation h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.rangeAnimationAndSunduckC {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.rangeOneLayer {
+  width: 90%;
+  height: 18px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #37464f;
+}
+
+.animatonTwoLayer {
+  width: 20%;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: #fed901;
+}
+
+.animationThreeLayer {
+  width: 90%;
+  height: 10px;
+  border-radius: 16px;
+  background-color: #b19704a0;
+}
+
+.imagesunduck {
+  width: fit-content;
+}
+
+.unlockSoonCAdded {
+  width: 99%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #2c383f;
+  border-radius: 15px;
+  margin-top: 20px;
+  background-color: #202f36;
+}
+
+.imageForUnlock {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentForUnlock {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.rightbarForQuestsPgae {
+  width: 40%;
+
+}
+
+.MonthlychallengesunlockC {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerMonthlychallengesunlock {
+  width: 90%;
+  height: 250px;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-right: 0;
+  border: 2px solid #2c383f;
+}
+
+.questpageHeaders {
+  width: 100%;
+
+}
+
+.contentForQuestsInRightbar {
+  width: 60%;
+}
+
+.contentForQuestsInRightbar h1 {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.contentForQuestsInRightbar p {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 5px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.745);
+}
+
+.imageForQuestsInRightbar {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.buttonInQuestsinrightbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.STARTALESSONINQUESTSPAGE {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.STARTALESSONINQUESTSPAGE button {
+  width: 90%;
+  height: 45px;
+  border-radius: 15px;
+  color: #24b0f6;
+  border: 2px solid #37464f;
+  box-shadow: 0 2px 0 0 #37464f;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* The end of syling css of .Questspage from here */
+
+/* This is shopePgae of styling css from here now */
+#shopePgae {
+  width: 80%;
+  left: 20%;
+  display: flex;
+  position: absolute;
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-iteration-count: calc(1);
+}
+
+.midPgaeForShope {
+  width: 60%;
+}
+
+.StartafamilyplanLandingpage {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerStartafamilyplanLandingpage {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  padding: 15px;
+  padding-right: 0;
+  border-radius: 15px;
+  align-items: center;
+  background: radial-gradient(216% 106% at 6% 3%, #26f6634d, #268aff4d, #fc55ff4d, #000437);
+}
+
+.StartafamilyplanLandingpageForContetn {
+  width: 60%;
+}
+
+.StartafamilyplanLandingpageForContetn h1 {
+  font-size: 1.30em;
+  padding-bottom: 3px;
+}
+
+.StartafamilyplanLandingpageForContetn p {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.LEARNMORELINK {
+  width: 100%;
+  display: flex;
+}
+
+.LEARNMORELINK button {
+  width: 90%;
+  height: 45px;
+  color: black;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 0 0 gray;
+}
+
+.StartafamilyplanLandingpageForImage {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-size: cover;
+  background-image: url(./0c25e40bb026a7dc4b49d715a7dc40e4.svg);
+}
+
+
+.RefillHeartsContainer {
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerRefillHeartsC {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heartTextC {
+  width: 100%;
+
+}
+
+.heartTextC strong {
+  font-size: 1.50em;
+  padding-left: 5px;
+}
+
+.heartContentAndImageC {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  margin-top: 15px;
+  padding: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: center;
+  border-top: 2px solid #37464f;
+}
+
+.imageHeartForInshopepage {
+  width: 20%;
+  display: flex;
+  align-items: center;
+
+}
+
+.imageHeartForInshopepage img {
+  width: 150px;
+}
+
+.contentForHeartinShopePgae {
+  width: 55%;
+}
+
+.contentForHeartinShopePgae h2 {
+  line-height: 30px;
+}
+
+.contentForHeartinShopePgae p {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.buttonCForheartInShopePage {
+  width: 25%;
+  height: 80px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+}
+
+.FULLHeartLink {
+  width: 100%;
+}
+
+.buttonCForheartInShopePage button {
+  width: 100%;
+  height: 45px;
+  font-weight: bold;
+  color: #37464f;
+  border-radius: 15px;
+  border: 2px solid #37464f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.RefillHeartsContainerTwo {
+  margin-top: -50px;
+}
+
+.FULLHeartLinkTwo {
+  width: 100%;
+}
+
+.FULLHeartLinkTwo button {
+  width: 100%;
+  height: 45px;
+  font-weight: bold;
+  color: #cf17c8;
+  border-radius: 15px;
+  border: 2px solid #37464f;
+  box-shadow: 0 3px 0 0 #37464f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.HeadingEQUIPPED {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeadingEQUIPPED p {
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 100px;
+  font-size: 14px;
+  height: 25px;
+  align-items: center;
+  display: flex;
+  color: #37464f;
+  justify-content: center;
+  background-color: #202f36;
+}
+
+.FULLHeartLinkTwoThree {
+  width: 100%;
+}
+
+.FULLHeartLinkTwoThree button {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #24b0f6;
+  justify-content: space-evenly;
+}
+
+.FULLHeartLinkTwoThree button img {
+  width: 20px;
+
+}
+
+.rightbarForShopePgae {
+  width: 32%;
+  height: 100VH;
+  right: 0;
+  display: flex;
+  position: fixed;
+  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerRightbarShopePage {
+  width: 90%;
+
+
+}
+
+/* The end shopePgae of styling css from here now */
+
+
+
+
+
+/* This runningLesson Of styling page from here */
+#RunningLesson {
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  position: fixed;
+  background-color: #131f25;
+}
+/* The end runnningLesson of styling page from here */
